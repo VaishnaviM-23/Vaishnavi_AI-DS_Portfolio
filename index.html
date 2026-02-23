@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vaishnavi M | Portfolio</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI", sans-serif;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  background:#0f172a;
+  color:#e2e8f0;
+}
+
+/* Sidebar */
+.sidebar{
+  position:fixed;
+  width:230px;
+  height:100vh;
+  background:#1a2742;
+  padding:20px;
+  text-align:center;
+  overflow-y:auto;
+}
+.sidebar img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  border:2px solid #38bdf8;
+}
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  color:#38bdf8;
+  margin-bottom:5px;
+}
+.sidebar p{
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+.sidebar hr{
+  border:0.5px solid #334155;
+  margin:15px 0;
+}
+
+.sidebar a{
+  display:block;
+  margin:10px 0;
+  padding:8px;
+  color:#cbd5e1;
+  text-decoration:none;
+  border-radius:5px;
+  transition:0.3s;
+}
+
+.sidebar a:hover{
+  background:#38bdf8;
+  color:#0f172a;
+  transform:translateX(5px);
+}
+
+/* Main */
+.main{
+  margin-left:230px;
+  padding:50px;
+}
+.section{
+  min-height:100vh;
+  padding:40px 0;
+}
+h1,h2,h3{
+  color:#38bdf8;
+  margin-bottom:15px;
+}
+
+/* Home */
+#home{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+.highlight{
+  color:white;
+}
+#typing{
+  font-size:18px;
+  color:#94a3b8;
+  margin-top:10px;
+}
+
+/* Button */
+.btn{
+  margin-top:20px;
+  padding:10px 22px;
+  border:1px solid #38bdf8;
+  background:transparent;
+  color:#38bdf8;
+  cursor:pointer;
+  transition:0.3s;
+  border-radius:4px;
+}
+.btn:hover{
+  background:#38bdf8;
+  color:#0f172a;
+}
+
+/* Cards */
+.card{
+  background:#1e293b;
+  padding:18px;
+  border-radius:6px;
+  margin:15px 0;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* Skills */
+.skills-list{
+  margin-top:15px;
+}
+.skill-item{
+  background:#1e293b;
+  padding:10px 15px;
+  margin-bottom:10px;
+  border-radius:4px;
+  border:1px solid #334155;
+  transition:0.3s;
+}
+.skill-item:hover{
+  background:#38bdf8;
+  color:#0f172a;
+  transform:translateX(5px);
+}
+
+ul{
+  padding-left:20px;
+}
+a{
+  color:#38bdf8;
+}
+a:hover{
+  text-decoration:underline;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+  }
+  .main{
+    margin-left:0;
+    padding:20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <img src="mypho.jpeg" alt="Profile">
+  <div class="logo">VAISHNAVI M</div>
+  <p>AI & Data Science Student</p>
+
+  <hr>
+
+  <!-- Education Added in Menu -->
+  <a href="#home">Home</a>
+  
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#activities">Technical Events</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+
+<section id="home" class="section">
+  <h1>Hello, I'm <span class="highlight">Vaishnavi M</span></h1>
+  <p id="typing"></p>
+  <button class="btn" onclick="document.getElementById('contact').scrollIntoView()">
+    Hire Me
+  </button>
+</section>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Professional and motivated Artificial Intelligence and Data Science student seeking an entry-level opportunity in a growing organization. Skilled in analytical thinking, problem-solving, and programming with hands-on experience in data analysis and model development.
+  </p>
+
+  <br><br>
+  <h3>Skills</h3>
+  <div class="skills-list">
+    <div class="skill-item">HTML</div>
+    <div class="skill-item">CSS</div>
+    <div class="skill-item">JavaScript</div>
+    <div class="skill-item">Python</div>
+    <div class="skill-item">Machine Learning</div>
+    <div class="skill-item">SQL</div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <h2>Education</h2>
+
+  <div class="card">
+    
+     <p><strong>K.S. Rangasamy College of Technology, Tiruchengode</strong></p> 
+     <p> B. Tech Artificial Intelligence and Data Science
+     </p>
+     <p>2023 – 2027 (Up to 5th Semester)</p> <p>CGPA: 9.47</p>
+     </div>
+      <div class="card"> 
+        <h3>Higher Secondary Education (12th Grade)</h3> 
+        <p><strong>Government Higher Secondary School, Tiruchengode</strong></p>
+         <p>Year of Completion: 2023</p> <p>Percentage: 86%</p>
+          <p>Engineering Cut-Off: 173</p> </div>
+</section>
+
+
+<section id="experience" class="section">
+  <h2>Work Experience</h2>
+
+  <div class="card">
+    <h3>Deep Learning Intern</h3>
+    <p><strong>Nexgen Nextopia</strong></p>
+    <p>Sep 2025 – Nov 2025</p>
+    <ul><br>
+      <li>Worked on ML and Deep Learning projects.</li>
+      <li>Developed Telcom Churn Prediction model.</li>
+      <li>Built CNN-based Fashion MNIST classifier.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Data Science Virtual Intern</h3>
+    <p><strong>Altair RapidMiner</strong></p>
+    <p>Apr 2025 – Jun 2025</p>
+    <ul><br>
+      <li>Performed data preprocessing and EDA.</li>
+      <li>Built predictive models and dashboards.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Crop Vista</h3>
+    <p>Smart agriculture platform helping farmers choose crops.</p>
+  </div>
+
+  <div class="card">
+    <h3>Pet Adoption Website</h3>
+    <p>User-friendly platform for managing and adopting pets.</p>
+  </div>
+  <div class="card">
+    <h3>Travel Booking System</h3>
+    <p>Interactive travel booking application using JavaScript.</p>
+  </div>
+</section>
+
+<section id="certifications" class="section">
+  <h2>Certifications</h2>
+
+  <div class="card">
+    <p>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</p>
+  </div>
+
+  <div class="card">
+    <p>Machine Learning for All (Coursera)</p>
+  </div>
+
+  <div class="card">
+    <p>Data Analytics with Python (NPTEL)</p>
+  </div>
+  <div class="card">
+    <p>The Joy of Computing Using Python (NPTEL)</p>
+  </div>
+
+  <div class="card">
+    <p>Python for Data Science (NPTEL)</p>
+  </div>
+
+  <div class="card">
+    <p>English for Competitive Exams (NPTEL)</p>
+  </div>
+
+  <div class="card">
+    <p>Advanced R Programming with Data Analytics (NPTEL)</p>
+  </div>
+
+  
+</section>
+
+<section id="activities" class="section">
+  <h2>Workshops & Presentation</h2>
+
+  <div class="card">
+    <p>National Level MATLAB Workshop – KSRCT</p>
+  </div>
+
+  <div class="card">
+    <p>National Level Paper Presentation – Nandha Engineering College</p>
+  </div>
+
+  <div class="card">
+    <p>Hackathon Participation – Nandha Engineering College</p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+   <h2>Contact</h2> 
+   <div class="card">
+     <p><strong>Name:</strong> Vaishnavi M</p> 
+     <p><strong>Email:</strong> mvaishnavi0201@gmail.com</p> 
+     <p><strong>Phone:</strong> 8300453406</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/VaishnaviM-23" target="_blank">github.com/VaishnaviM-23</a> </p>
+     <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vaishnavi-m-565259b292" target="_blank">linkedin.com/in/vaishnavi-m-565259b292</a> </p> </div> </section>
+
+</div>
+
+<script>
+const roles = ["AI & ML Student", "Frontend Developer", "Data Science Enthusiast"];
+let roleIndex = 0;
+let charIndex = 0;
+
+function typeEffect(){
+  const current = roles[roleIndex];
+  document.getElementById("typing").textContent =
+    current.substring(0,charIndex);
+
+  charIndex++;
+
+  if(charIndex > current.length){
+    charIndex = 0;
+    roleIndex = (roleIndex + 1) % roles.length;
+  }
+
+  setTimeout(typeEffect,120);
+}
+
+typeEffect();
+</script>
+
+</body>
+</html>
